@@ -1,11 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      ค้นหารายชื่อ
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <form (ngSubmit)="findmember()">
+  <ion-item>
+    <ion-label>
+      กรอกข้อมูลที่ต้องการค้นหา
+    </ion-label>
+    <ion-input [(ngModel)]="data.keyword" name="keyword"> </ion-input>
+    <button ion-button block type="submit">
+      <ion-icon name="search"></ion-icon>ค้นหา
+    </button>
+  </ion-item>
+</form>
 </ion-content>

@@ -2,12 +2,12 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+import { ResultPage } from '../pages/result/result';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { DetailPage} from '../pages/detail/detail';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
@@ -18,7 +18,9 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    ResultPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,9 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    ResultPage
   ],
   providers: [
     StatusBar,
